@@ -21,8 +21,8 @@ RUN apt-get install -qy python python-cheetah ca-certificates wget unrar
 
 # Install SickRage 0.2.1 (2014-10-22)
 RUN mkdir /opt/sickrage
-RUN wget https://github.com/lqkme2/SickRageL/archive/4.0.9.1.tar.gz -O /tmp/4.0.9.1.tar.gz
-RUN tar -C /opt/sickrage -xvf /tmp/4.0.9.1.tar.gz --strip-components 1
+RUN wget https://github.com/lqkme2/SickRageL/archive/4.0.9.2.tar.gz -O /tmp/4.0.9.2.tar.gz
+RUN tar -C /opt/sickrage -xvf /tmp/4.0.9.2.tar.gz --strip-components 1
 RUN chown nobody:users /opt/sickrage
 
 EXPOSE 8081
